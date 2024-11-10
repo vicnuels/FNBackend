@@ -1,0 +1,15 @@
+{
+	"name": "FNBackend",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/handle-exception": "^0.1.9",
+		"github.com/hashload/horse-basic-auth": "^1.2.3",
+		"github.com/hashload/horse-compression": "^1.1.11",
+		"github.com/hashload/horse-jwt": "^2.0.14",
+		"github.com/hashload/jhonson": "^1.1.9"
+	}
+}

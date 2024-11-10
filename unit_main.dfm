@@ -1,0 +1,107 @@
+object UnitMain: TUnitMain
+  Left = 0
+  Top = 0
+  Caption = 'Farma Nossa Backend'
+  ClientHeight = 288
+  ClientWidth = 534
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 184
+    Top = 24
+    Width = 154
+    Height = 33
+    Alignment = taCenter
+    Caption = 'Farma Nossa'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 240
+    Top = 81
+    Width = 37
+    Height = 19
+    Alignment = taCenter
+    Caption = 'Porta'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object editPort: TEdit
+    Left = 200
+    Top = 106
+    Width = 121
+    Height = 24
+    Alignment = taCenter
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+  end
+  object btnStart: TButton
+    Left = 216
+    Top = 152
+    Width = 89
+    Height = 25
+    Caption = 'Start'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnStartClick
+  end
+  object btnStop: TButton
+    Left = 216
+    Top = 183
+    Width = 89
+    Height = 25
+    Caption = 'Stop'
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnStopClick
+  end
+  object btnConfig: TButton
+    Left = 200
+    Top = 223
+    Width = 121
+    Height = 25
+    Caption = 'Configurar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnConfigClick
+  end
+end
