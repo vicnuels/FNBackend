@@ -24,7 +24,8 @@ uses
   Controllers.user in 'controllers\Controllers.user.pas',
   FarmaNossa.Configs.Login in 'Configs\FarmaNossa.Configs.Login.pas',
   FarmaNossa.Services.Variable in 'services\FarmaNossa.Services.Variable.pas',
-  View.ConfigDB in 'Views\View.ConfigDB.pas' {ViewDBAccess};
+  View.ConfigDB in 'Views\View.ConfigDB.pas' {ViewDBAccess},
+  FarmaNossa.Entities.Local in 'entities\FarmaNossa.Entities.Local.pas';
 
 {$R *.res}
 

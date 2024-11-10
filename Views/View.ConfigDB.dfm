@@ -23,8 +23,6 @@ object ViewDBAccess: TViewDBAccess
     Height = 49
     Align = alBottom
     TabOrder = 0
-    ExplicitTop = 221
-    ExplicitWidth = 510
     object btnCancel: TBitBtn
       AlignWithMargins = True
       Left = 324
@@ -88,7 +86,6 @@ object ViewDBAccess: TViewDBAccess
         0000000000000000000000000000000000000000000000000000}
       TabOrder = 0
       OnClick = btnCancelClick
-      ExplicitLeft = 386
     end
     object btnCreate: TBitBtn
       AlignWithMargins = True
@@ -157,7 +154,7 @@ object ViewDBAccess: TViewDBAccess
         00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
       TabOrder = 1
       OnClick = btnCreateClick
-      ExplicitLeft = 260
+      ExplicitTop = 6
     end
   end
   object pnData: TPanel
@@ -167,7 +164,6 @@ object ViewDBAccess: TViewDBAccess
     Height = 184
     Align = alClient
     TabOrder = 1
-    ExplicitTop = -2
     object Label1: TLabel
       Left = 24
       Top = 20
