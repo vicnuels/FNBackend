@@ -35,5 +35,5 @@ begin
   Application.CreateForm(TUnitMain, UnitMain);
   Application.Run;
 
-   ReportMemoryLeaksOnShutdown := True;
+//   ReportMemoryLeaksOnShutdown := True;
 end.

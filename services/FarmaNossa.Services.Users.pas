@@ -3,7 +3,7 @@ unit FarmaNossa.Services.Users;
 interface
 
 uses
-  System.SysUtils, System.Classes, System.JSON, Data.DB, Uni, MemDS,
+  System.SysUtils, System.Classes, System.JSON, Data.DB, Uni, MemDS, Vcl.Dialogs,
   FarmaNossa.Providers.Connection;
 
 type
@@ -170,6 +170,7 @@ begin
       Result := Query.FieldByName('codigo').AsInteger
     else
       Result := -1;
+
   except
     on E: Exception do
     begin
@@ -212,6 +213,12 @@ function TServiceUser.Delete(UserId: Integer): Boolean;
 var
   Query: TUniQuery;
 begin
+  if UserId = 1 then
+  begin
+    Result := False;
+    exit;
+  end;
+
   Query := FConnectionProvider.GetQuery;
 
   try

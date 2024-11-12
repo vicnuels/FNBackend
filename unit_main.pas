@@ -95,6 +95,25 @@ begin
     exit;
   end;
   SetEnvVariableInRegistry('FARMA_NOSSA_PORT', Port.ToString);
+
+  btnStart.Enabled := False;
+  editPort.Enabled := False;
+  btnStop.Enabled := True;
+  THorse.Listen(Port);
+end;
+
+procedure TUnitMain.btnStopClick(Sender: TObject);
+begin
+  THorse.StopListen;
+  btnStart.Enabled := True;
+   editPort.Enabled := True;
+  btnStop.Enabled := False;
+end;
+
+procedure TUnitMain.FormCreate(Sender: TObject);
+var
+Port: String;
+begin
   THorse.Use(Compression()) // antes do Jhonson -  comprimir
     .Use(Jhonson).Use(HandleException); // gerenciar exceçoes
 
@@ -107,23 +126,6 @@ begin
   Controllers.Output.Registry;
   Controllers.Stock.Registry;
   Controllers.Report.Registry;
-
-  btnStart.Enabled := False;
-  btnStop.Enabled := True;
-  THorse.Listen(1000);
-end;
-
-procedure TUnitMain.btnStopClick(Sender: TObject);
-begin
-  THorse.StopListen;
-  btnStart.Enabled := True;
-  btnStop.Enabled := False;
-end;
-
-procedure TUnitMain.FormCreate(Sender: TObject);
-var
-Port: String;
-begin
   try
     Port :=  GetEnvVariableFromRegistry('FARMA_NOSSA_PORT');
     if Port <> '' then

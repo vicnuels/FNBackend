@@ -220,13 +220,7 @@ begin
 
     if not Product.OutputStatus then
     begin
-      Result := -4; // código para produto que não permite saída
-      Exit;
-    end;
-
-    if (not Product.NegativeStock) and (Product.Stock - Quantity < 0) then
-    begin
-      Result := -7; // codigo para produto que não aceita estoque negativo
+      Result := -4; // código para produto que não permite entrada
       Exit;
     end;
 
@@ -303,13 +297,7 @@ begin
 
     if not Product.OutputStatus then
     begin
-      Result := -4; // código para produto que não permite saída
-      Exit;
-    end;
-
-    if (not Product.NegativeStock) and (Product.Stock - Quantity < 0) then
-    begin
-      Result := -7; // codigo para produto que não aceita estoque negativo
+      Result := -4; // código para produto que não permite entrada
       Exit;
     end;
 
