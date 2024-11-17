@@ -15,5 +15,5 @@
 - Unidac 8.2.5
 - Banco de dados: [Criar banco antes de iniciar projeto](https://github.com/vicnuel/FNBackend/blob/main/DB/sql_inicial.sql)
 - Horse, Jonson...
-- Deixei todos o modulos na pasta module, pois o boos estava com problemas
+- Deixei todos o modulos na pasta module, pois o boss estava com problemas
 - Frontend: https://github.com/vicnuel/FarmaNossa 
