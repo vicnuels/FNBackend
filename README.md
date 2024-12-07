@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/vicnuels/FarmaNossa/refs/heads/main/Image/Logo.png?token=GHSAT0AAAAAAC2TFMFDBVV73P4N6IH76HFUZZZ76FA" />
+<img src="https://raw.githubusercontent.com/vicnuel/FarmaNossa/refs/heads/main/Image/Logo.png" />
 
 # Farma Nossa - Backend do Gerenciador de estoque de Farmacias
 - Cadastro de usuários
