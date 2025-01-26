@@ -13,7 +13,7 @@
 ## Ambiente de desenvolvimento
 - Delphi 10.4
 - Unidac 8.2.5
-- Banco de dados: [Criar banco antes de iniciar projeto](https://github.com/vicnuel/FNBackend/blob/main/DB/sql_inicial.sql)
+- Banco de dados: PostgreSQL [Criar banco antes de iniciar projeto](https://github.com/vicnuel/FNBackend/blob/main/DB/sql_inicial.sql)
 - Horse, Jonson...
 - Deixei todos o modulos na pasta module, pois o boss estava com problemas
 - Frontend: https://github.com/vicnuel/FarmaNossa 
